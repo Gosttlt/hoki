@@ -30,6 +30,7 @@ const RangeSlider: React.FC<Props> = ({values, value, type, onClick}) => {
             <div
               className={classNames({[s.active]: isCurrentValue})}
               style={{left: range[i]}}
+              key={item.value}
               onClick={() => {
                 onClick(item.price)
               }}
